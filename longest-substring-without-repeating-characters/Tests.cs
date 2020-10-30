@@ -2,11 +2,6 @@ using NUnit.Framework;
 
 public class Tests
 {
-    [SetUp]
-    public void Setup()
-    {
-    }
-
     /*
     Input: "abcabcbb"
     Output: 3
@@ -16,7 +11,7 @@ public class Tests
     public void Test1()
     {
         var t = new Solution();
-        var l = t.lengthOfLongestSubstring("abcabcbb");
+        var l = t.LengthOfLongestSubstring("abcabcbb");
         Assert.AreEqual(3, l);
     }
 
@@ -29,7 +24,7 @@ public class Tests
     public void Test2()
     {
         var t = new Solution();
-        var l = t.lengthOfLongestSubstring("bbbbb");
+        var l = t.LengthOfLongestSubstring("bbbbb");
         Assert.AreEqual(1, l);
     }
 
@@ -43,7 +38,7 @@ public class Tests
     public void Test3()
     {
         var t = new Solution();
-        var l = t.lengthOfLongestSubstring("pwwkew");
+        var l = t.LengthOfLongestSubstring("pwwkew");
         Assert.AreEqual(3, l);
     }
 
@@ -51,7 +46,7 @@ public class Tests
     public void Test4()
     {
         var t = new Solution();
-        var l = t.lengthOfLongestSubstring(" ");
+        var l = t.LengthOfLongestSubstring(" ");
         Assert.AreEqual(1, l);
     }
 
@@ -59,7 +54,7 @@ public class Tests
     public void Test5()
     {
         var t = new Solution();
-        var l = t.lengthOfLongestSubstring("abc");
+        var l = t.LengthOfLongestSubstring("abc");
         Assert.AreEqual(3, l);
     }
 
@@ -67,7 +62,7 @@ public class Tests
     public void Test6()
     {
         var t = new Solution();
-        var l = t.lengthOfLongestSubstring("aabaab!bb");
+        var l = t.LengthOfLongestSubstring("aabaab!bb");
         Assert.AreEqual(3, l);
     }
 }

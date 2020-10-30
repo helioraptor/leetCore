@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 class Solution {
-    public int lengthOfLongestSubstring(string s) {
+    public int LengthOfLongestSubstring(string s) {
         var maxLen = 0;
         var lastSeenAt = new Dictionary<char, int>();
         int cutoff = -1;
